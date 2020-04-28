@@ -95,6 +95,14 @@ button {
   font-weight: 800;
   color: #00132e;
 }
+.header .phones .recall {
+  background: transparent;
+  border: 1px solid #003460;
+  color: #003460;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
 .header .lang {
   padding-right: 20px;
 }
@@ -277,6 +285,56 @@ svg #fish6 {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
   }
+}
+.about {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.about h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #00132e;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.about h2::before {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  display: block;
+  content: "";
+  width: 82%;
+  height: 1px;
+  border-bottom: 1px solid #003460;
+}
+.about .about_img {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+.about .about_text {
+  margin: 0;
+  padding: 0;
+}
+.about .next {
+  background: #003460;
+  border: none;
+  margin: 45px auto;
+  padding: 10px 60px;
+  font-size: 40px;
+  color: #FFFFFF;
+  box-shadow: -5px 5px 15px #000000;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.about .next:hover {
+  transform: translateY(-10%);
 }
 .featured {
   padding-top: 50px;
@@ -530,6 +588,9 @@ svg #fish6 {
   color: #003460;
   text-decoration: none;
 }
+.footer .footer_text {
+  font-size: 12px;
+}
 .modal form {
   display: flex;
   justify-content: space-between;
@@ -589,6 +650,7 @@ svg #fish6 {
     bottom: 50px;
     font-size: 25px;
   }
+  .about .next,
   .featured .next,
   .recommend .next,
   .sale .next {
